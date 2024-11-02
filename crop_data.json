@@ -1,250 +1,257 @@
 [
-    [
-        {
-            "state_fips_code": "19",
-            "country_name": "UNITED STATES",
-            "county_ansi": "",
-            "state_name": "IOWA",
-            "unit_desc": "ACRES",
-            "year": 2024,
-            "country_code": "9000",
-            "domain_desc": "TOTAL",
-            "statisticcat_desc": "AREA PLANTED",
-            "CV (%)": "",
-            "state_alpha": "IA",
-            "asd_code": "",
-            "domaincat_desc": "NOT SPECIFIED",
-            "state_ansi": "19",
-            "county_name": "",
-            "asd_desc": "",
-            "agg_level_desc": "STATE",
-            "week_ending": "",
-            "source_desc": "SURVEY",
-            "group_desc": "FIELD CROPS",
-            "prodn_practice_desc": "ALL PRODUCTION PRACTICES",
-            "load_time": "2024-10-11 12:00:00.000",
-            "region_desc": "",
-            "congr_district_code": "",
-            "Value": "12,900,000",
-            "zip_5": "",
-            "freq_desc": "ANNUAL",
-            "location_desc": "IOWA",
-            "watershed_code": "00000000",
-            "class_desc": "ALL CLASSES",
-            "watershed_desc": "",
-            "begin_code": "00",
-            "county_code": "",
-            "short_desc": "CORN - ACRES PLANTED",
-            "util_practice_desc": "ALL UTILIZATION PRACTICES",
-            "sector_desc": "CROPS",
-            "reference_period_desc": "YEAR",
-            "commodity_desc": "CORN",
-            "end_code": "00"
-        },
-        {
-            "week_ending": "",
-            "agg_level_desc": "STATE",
-            "asd_desc": "",
-            "county_name": "",
-            "state_ansi": "19",
-            "domaincat_desc": "NOT SPECIFIED",
-            "asd_code": "",
-            "state_alpha": "IA",
-            "statisticcat_desc": "AREA PLANTED",
-            "CV (%)": "",
-            "year": 2024,
-            "domain_desc": "TOTAL",
-            "country_code": "9000",
-            "unit_desc": "ACRES",
-            "state_name": "IOWA",
-            "county_ansi": "",
-            "state_fips_code": "19",
-            "country_name": "UNITED STATES",
-            "end_code": "00",
-            "reference_period_desc": "YEAR - AUG FORECAST",
-            "commodity_desc": "CORN",
-            "util_practice_desc": "ALL UTILIZATION PRACTICES",
-            "sector_desc": "CROPS",
-            "short_desc": "CORN - ACRES PLANTED",
-            "county_code": "",
-            "begin_code": "00",
-            "watershed_desc": "",
-            "class_desc": "ALL CLASSES",
-            "watershed_code": "00000000",
-            "location_desc": "IOWA",
-            "freq_desc": "ANNUAL",
-            "zip_5": "",
-            "Value": "12,900,000",
-            "congr_district_code": "",
-            "load_time": "2024-08-12 12:00:00.000",
-            "region_desc": "",
-            "prodn_practice_desc": "ALL PRODUCTION PRACTICES",
-            "group_desc": "FIELD CROPS",
-            "source_desc": "SURVEY"
-        },
-        {
-            "state_alpha": "IA",
-            "statisticcat_desc": "AREA PLANTED",
-            "CV (%)": "",
-            "country_code": "9000",
-            "domain_desc": "TOTAL",
-            "year": 2024,
-            "state_name": "IOWA",
-            "county_ansi": "",
-            "state_fips_code": "19",
-            "country_name": "UNITED STATES",
-            "unit_desc": "ACRES",
-            "agg_level_desc": "STATE",
-            "week_ending": "",
-            "county_name": "",
-            "state_ansi": "19",
-            "asd_desc": "",
-            "domaincat_desc": "NOT SPECIFIED",
-            "asd_code": "",
-            "location_desc": "IOWA",
-            "freq_desc": "ANNUAL",
-            "congr_district_code": "",
-            "region_desc": "",
-            "load_time": "2024-06-28 12:00:00.000",
-            "Value": "13,100,000",
-            "zip_5": "",
-            "source_desc": "SURVEY",
-            "prodn_practice_desc": "ALL PRODUCTION PRACTICES",
-            "group_desc": "FIELD CROPS",
-            "commodity_desc": "CORN",
-            "reference_period_desc": "YEAR - JUN ACREAGE",
-            "end_code": "00",
-            "sector_desc": "CROPS",
-            "util_practice_desc": "ALL UTILIZATION PRACTICES",
-            "short_desc": "CORN - ACRES PLANTED",
-            "county_code": "",
-            "begin_code": "00",
-            "watershed_code": "00000000",
-            "watershed_desc": "",
-            "class_desc": "ALL CLASSES"
-        },
-        {
-            "freq_desc": "ANNUAL",
-            "location_desc": "IOWA",
-            "source_desc": "SURVEY",
-            "group_desc": "FIELD CROPS",
-            "prodn_practice_desc": "ALL PRODUCTION PRACTICES",
-            "congr_district_code": "",
-            "load_time": "2024-03-28 12:00:00.000",
-            "region_desc": "",
-            "zip_5": "",
-            "Value": "12,800,000",
-            "short_desc": "CORN - ACRES PLANTED",
-            "sector_desc": "CROPS",
-            "util_practice_desc": "ALL UTILIZATION PRACTICES",
-            "commodity_desc": "CORN",
-            "reference_period_desc": "YEAR - MAR ACREAGE",
-            "end_code": "00",
-            "watershed_code": "00000000",
-            "watershed_desc": "",
-            "class_desc": "ALL CLASSES",
-            "county_code": "",
-            "begin_code": "00",
-            "state_alpha": "IA",
-            "statisticcat_desc": "AREA PLANTED",
-            "CV (%)": "",
-            "state_name": "IOWA",
-            "state_fips_code": "19",
-            "county_ansi": "",
-            "country_name": "UNITED STATES",
-            "unit_desc": "ACRES",
-            "year": 2024,
-            "domain_desc": "TOTAL",
-            "country_code": "9000",
-            "county_name": "",
-            "state_ansi": "19",
-            "asd_desc": "",
-            "agg_level_desc": "STATE",
-            "week_ending": "",
-            "asd_code": "",
-            "domaincat_desc": "NOT SPECIFIED"
-        },
-        {
-            "statisticcat_desc": "AREA PLANTED",
-            "CV (%)": "",
-            "state_alpha": "IA",
-            "country_code": "9000",
-            "year": 2024,
-            "domain_desc": "TOTAL",
-            "country_name": "UNITED STATES",
-            "county_ansi": "",
-            "state_fips_code": "19",
-            "state_name": "IOWA",
-            "unit_desc": "ACRES",
-            "agg_level_desc": "STATE",
-            "week_ending": "",
-            "state_ansi": "19",
-            "county_name": "",
-            "asd_desc": "",
-            "asd_code": "",
-            "domaincat_desc": "NOT SPECIFIED",
-            "location_desc": "IOWA",
-            "freq_desc": "ANNUAL",
-            "load_time": "2024-10-11 12:00:00.000",
-            "region_desc": "",
-            "congr_district_code": "",
-            "zip_5": "",
-            "Value": "12,900,000",
-            "source_desc": "SURVEY",
-            "group_desc": "FIELD CROPS",
-            "prodn_practice_desc": "ALL PRODUCTION PRACTICES",
-            "commodity_desc": "CORN",
-            "reference_period_desc": "YEAR - OCT FORECAST",
-            "end_code": "00",
-            "short_desc": "CORN - ACRES PLANTED",
-            "sector_desc": "CROPS",
-            "util_practice_desc": "ALL UTILIZATION PRACTICES",
-            "begin_code": "00",
-            "county_code": "",
-            "watershed_code": "00000000",
-            "class_desc": "ALL CLASSES",
-            "watershed_desc": ""
-        },
-        {
-            "unit_desc": "ACRES",
-            "state_fips_code": "19",
-            "county_ansi": "",
-            "country_name": "UNITED STATES",
-            "state_name": "IOWA",
-            "year": 2024,
-            "country_code": "9000",
-            "domain_desc": "TOTAL",
-            "CV (%)": "",
-            "statisticcat_desc": "AREA PLANTED",
-            "state_alpha": "IA",
-            "asd_code": "",
-            "domaincat_desc": "NOT SPECIFIED",
-            "asd_desc": "",
-            "county_name": "",
-            "state_ansi": "19",
-            "week_ending": "",
-            "agg_level_desc": "STATE",
-            "prodn_practice_desc": "ALL PRODUCTION PRACTICES",
-            "group_desc": "FIELD CROPS",
-            "source_desc": "SURVEY",
-            "Value": "12,900,000",
-            "zip_5": "",
-            "region_desc": "",
-            "load_time": "2024-09-12 12:00:00.000",
-            "congr_district_code": "",
-            "freq_desc": "ANNUAL",
-            "location_desc": "IOWA",
-            "class_desc": "ALL CLASSES",
-            "watershed_desc": "",
-            "watershed_code": "00000000",
-            "begin_code": "00",
-            "county_code": "",
-            "short_desc": "CORN - ACRES PLANTED",
-            "util_practice_desc": "ALL UTILIZATION PRACTICES",
-            "sector_desc": "CROPS",
-            "end_code": "00",
-            "reference_period_desc": "YEAR - SEP FORECAST",
-            "commodity_desc": "CORN"
-        }
-    ]
+    {
+        "crop": "CORN",
+        "state": "US TOTAL",
+        "amount": "90,748,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "",
+        "amount": "1,207,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "OTHER STATES",
+        "amount": "767,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "ALABAMA",
+        "amount": "280,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "ARIZONA",
+        "amount": "70,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "ARKANSAS",
+        "amount": "500,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "CALIFORNIA",
+        "amount": "440,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "COLORADO",
+        "amount": "1,460,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "CONNECTICUT",
+        "amount": "24,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "DELAWARE",
+        "amount": "165,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "FLORIDA",
+        "amount": "85,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "GEORGIA",
+        "amount": "375,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "IDAHO",
+        "amount": "380,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "ILLINOIS",
+        "amount": "10,800,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "INDIANA",
+        "amount": "5,200,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "IOWA",
+        "amount": "12,900,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "KANSAS",
+        "amount": "6,300,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "KENTUCKY",
+        "amount": "1,370,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "LOUISIANA",
+        "amount": "470,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "MAINE",
+        "amount": "30,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "MARYLAND",
+        "amount": "440,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "MASSACHUSETTS",
+        "amount": "14,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "MICHIGAN",
+        "amount": "2,250,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "MINNESOTA",
+        "amount": "8,200,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "MISSISSIPPI",
+        "amount": "490,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "MISSOURI",
+        "amount": "3,450,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "MONTANA",
+        "amount": "135,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "NEBRASKA",
+        "amount": "10,100,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "NEVADA",
+        "amount": "20,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "NEW HAMPSHIRE",
+        "amount": "12,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "NEW JERSEY",
+        "amount": "71,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "NEW MEXICO",
+        "amount": "105,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "NEW YORK",
+        "amount": "1,010,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "NORTH CAROLINA",
+        "amount": "890,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "NORTH DAKOTA",
+        "amount": "3,950,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "OHIO",
+        "amount": "3,400,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "OKLAHOMA",
+        "amount": "450,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "OREGON",
+        "amount": "95,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "PENNSYLVANIA",
+        "amount": "990,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "RHODE ISLAND",
+        "amount": "2,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "SOUTH CAROLINA",
+        "amount": "345,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "SOUTH DAKOTA",
+        "amount": "5,900,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "TENNESSEE",
+        "amount": "700,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "TEXAS",
+        "amount": "2,200,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "UTAH",
+        "amount": "75,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "VERMONT",
+        "amount": "94,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "VIRGINIA",
+        "amount": "460,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "WASHINGTON",
+        "amount": "170,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "WEST VIRGINIA",
+        "amount": "41,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "WISCONSIN",
+        "amount": "3,750,000"
+    },
+    {
+        "crop": "CORN",
+        "state": "WYOMING",
+        "amount": "90,000"
+    }
 ]
