@@ -16,16 +16,14 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 async def read_index():
     map = Map()
     choice = ''
-    Crop(choice)
-    while(choice is False):
-        map.heat_map(choice)
+
+    # Bad API Call
+    if(choice == ''):
+        pass
+    else:
+        Crop(choice)
+    
+    map.heat_map(choice)
     
     with open(os.path.join("static", "map.html"), "r") as file:
         return HTMLResponse(content=file.read())
-
-
-# def main():
-#     
-
-# if __name__ == "__main__":
-#     main()
