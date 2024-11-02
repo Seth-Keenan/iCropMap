@@ -12,7 +12,7 @@ class Crop:
     def pull_data(self, crop):
         params = {
             'commodity_desc': crop,
-            'year__GE': '2024',
+            'year__GE': "2024",
             'key': API_KEY,
             'format': 'json',
             "short_desc": f"{crop} - ACRES PLANTED",
