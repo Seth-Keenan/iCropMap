@@ -15,29 +15,29 @@ def pull_data(crop):
         "short_desc": f"{crop} - ACRES PLANTED",
         "reference_period_desc": "YEAR"
     }
-    encoded_params = urllib.parse.urlencode(params)
+    encoded_params = urllib.parse.urlencode(params) # encode parameters
     base_url = "https://quickstats.nass.usda.gov/api/api_GET/"
     full_url = f"{base_url}?{encoded_params}"
-    data = fetch_api_data(full_url, params) # pull data from API
+    data = fetch_api_data(full_url) # pull data from API
     
     add_data_to_file(data, 'state_data.json') # add unfilitered data to json file
-    filtered_data = filter_data(data)
+    filtered_data = filter_data(data, crop)
     add_data_to_file(filtered_data, 'crop_data.json') # add filtered data to json file
 
-def fetch_api_data(url, params):
+def fetch_api_data(url):
     response = requests.get(url)
     if response.status_code == 200: # successful request
         return response.json()
     else:
         response.raise_for_status() # raise exception if request fails
         
-def filter_data(data):
+def filter_data(data, crop):
     filtered_data = []
     with open('state_data.json', 'r') as f: # open file of unfiltered json file 
         state_data = json.load(f)
     dict_list = state_data['data'] # list of dictionaries
     for item in dict_list: # loop through dictionaries
-        if item.get("short_desc") == "CORN - ACRES PLANTED" and item.get("reference_period_desc") == "YEAR": # anything other then acres planted and ignores month data
+        if item.get("short_desc") == f"{crop} - ACRES PLANTED" and item.get("reference_period_desc") == "YEAR": # anything other then acres planted and ignores month data
             new_item = {"crop": item.get("commodity_desc")}
             new_item["state"] = item.get("state_name")
             new_item["amount"] = item.get("Value")
