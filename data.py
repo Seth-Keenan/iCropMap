@@ -5,7 +5,7 @@ import pandas as pd
 from config import API_KEY
 
 class Crop:
-    def __init__(self, crop):
+    def __init__(self, crop, date):
         self.crop = crop
         self.data = self.pull_data(crop)
 
