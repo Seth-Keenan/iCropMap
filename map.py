@@ -55,6 +55,7 @@ class Map:
                 fill_opacity=0.7,
                 line_opacity=0.5,
                 legend_name=crop,
+                nan_fill_color="lightyellow"
             ).add_to(self.m)
 
             self.m.save("static/map.html")
