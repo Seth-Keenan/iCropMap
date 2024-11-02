@@ -19,9 +19,9 @@ async def read_index():
         return HTMLResponse(content=file.read())
 
 @app.get("/map", response_class=HTMLResponse)
-async def read_map(crop: str):
+async def read_map(crop: str, year: str):
     map = Map()
-    Crop(crop)
+    Crop(crop, year)
     map.heat_map(crop)
     with open(os.path.join("static", "index.html"), "r") as file:
         return HTMLResponse(content=file.read())
