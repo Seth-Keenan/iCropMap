@@ -1,5 +1,2 @@
-venv/
-<<<<<<< HEAD
-=======
-__pycache__/
->>>>>>> SekDev
+# .gitignore
+config.py
