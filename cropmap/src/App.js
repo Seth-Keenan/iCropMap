@@ -1,9 +1,9 @@
 import React from 'react';
-import Index from './pages/Index'
 import Navbar from './Navbar'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import { Route, Routes } from "react-router-dom"
+import Index from './pages/Index';
 
 
 export default function App() 
