@@ -41,7 +41,7 @@ def filter_data(crop):
     for item in dict_list: # loop through dictionaries
         if item.get("short_desc") == f"{crop} - ACRES PLANTED" and item.get("reference_period_desc") == "YEAR": # anything other then acres planted and ignores month data
             new_item = {"State": item.get("state_alpha")}
-            new_item["Amount"] = item.get("Value")
+            new_item["Amount"] = int(item.get("Value").replace(',', ''))
             # adds crop, state, and amount of acres of the crop planted per state to dictionary
             if len(item.get("state_alpha")) == 2 and item.get("state_alpha") != "US": # filter random entries and overall US data 
                 filtered_data.append(new_item)
