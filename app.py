@@ -5,7 +5,6 @@ from fastapi import FastAPI
 # Create Python virtual environment
 # python3 -m venv venv
 # source venv/bin/activate
-# .\venv\Scripts\activate
 
 # Install dependencies 
 # pip3 install -r requirements.txt
@@ -19,5 +18,7 @@ app = FastAPI()
 def read_root():
     return {"Hello": "World"}
 
-print("uncommitted changes")
+print("uncommitted")
+
+
 
