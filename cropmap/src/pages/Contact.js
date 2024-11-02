@@ -2,5 +2,5 @@ import React from 'react';
 
 export default function About()
 {
-    return <body>Index</body>
+    return <p>Contact us</p>
 }

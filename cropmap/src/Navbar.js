@@ -10,6 +10,7 @@ export default function Navbar()
             <Link to="/Index" className="site-title">Crop Map</Link>
             <ul>
                     <CustomLink to="/About">About</CustomLink>
+                    <CustomLink to="/Contact">Contact</CustomLink>
             </ul>
         </nav>
     )
