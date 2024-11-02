@@ -1,10 +1,8 @@
 folium
 pandas
 numpy
-ipywidgets
 geocoder
 geopy
-PyQt5
-PyQtWebEngine
 requests
 fastapi[standard]
+uvicorn
