@@ -9,13 +9,17 @@ class Map:
     def __init__(self):
         #self.crop = crop
         self.m = folium.Map(
-            location=(39.30, -98.5795), 
+            location=(39.30, -98.5795),
             zoom_start=5,
-            dragging = False,
-            zoom_control = False,
-            scrollWheelZoom = False,
-            doubleClickZoom = False
-            )
+            min_zoom = 5,
+            max_zoom = 7,
+            min_lat=24.396308,
+            max_lat=49.384358,
+            min_lon=-125.0,
+            max_lon=-66.93457,
+            max_bounds = True,
+            scrollWheelZoom=False
+        )
         
         self.state_geo = requests.get(
         "https://raw.githubusercontent.com/python-visualization/folium-example-data/main/us_states.json"

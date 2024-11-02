@@ -1,6 +1,5 @@
 import sys
 import os
-from PyQt5 import QtWidgets
 from map import Map
 from data import Crop
 from fastapi import FastAPI, HTTPException
@@ -15,15 +14,24 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 @app.get("/", response_class=HTMLResponse)
 async def read_index():
     map = Map()
-    choice = ''
-
-    # Bad API Call
-    if(choice == ''):
-        pass
-    else:
-        Crop(choice)
+    # choice = 'CORN'
+    # Crop(choice)
+    # while(choice is False):
+    #     map.heat_map(choice)
     
-    map.heat_map(choice)
-    
-    with open(os.path.join("static", "map.html"), "r") as file:
+    with open(os.path.join("static", "index.html"), "r") as file:
         return HTMLResponse(content=file.read())
+
+@app.get("/map", response_class=HTMLResponse)
+async def read_map(crop: str):
+    map = Map()
+    Crop(crop)
+    map.heat_map(crop)
+    with open(os.path.join("static", "index.html"), "r") as file:
+        return HTMLResponse(content=file.read())
+
+# def main():
+#     
+
+# if __name__ == "__main__":
+#     main()
