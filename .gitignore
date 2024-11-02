@@ -6,3 +6,4 @@ __pycache__/
 crop_data.csv
 crop_data.json
 map.html
+state_data.json

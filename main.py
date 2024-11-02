@@ -25,10 +25,3 @@ async def read_map(crop: str):
     map.heat_map(crop)
     with open(os.path.join("static", "index.html"), "r") as file:
         return HTMLResponse(content=file.read())
-
-def main():
-    uvicorn.run(app, host="0.0.0.0", port=8080)
-
-# Main calling function
-if __name__ == "__main__":
-    main()
