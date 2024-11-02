@@ -1,4 +1,5 @@
 import requests
+import urllib.parse
 import json
 from config import API_KEY
 
@@ -9,18 +10,22 @@ def pull_data(crop):
     params = {
         'commodity_desc': crop,
         'year__GE': '2024',
-        'format': 'json'
+        'key': API_KEY,
+        'format': 'json',
+        "short_desc": f"{crop} - ACRES PLANTED",
+        "reference_period_desc": "YEAR"
     }
-    url = "https://quickstats.nass.usda.gov/api/api_GET/"
-    data = fetch_api_data(url, params) # pull data from API
+    encoded_params = urllib.parse.urlencode(params)
+    base_url = "https://quickstats.nass.usda.gov/api/api_GET/"
+    full_url = f"{base_url}?{encoded_params}"
+    data = fetch_api_data(full_url, params) # pull data from API
     
     add_data_to_file(data, 'state_data.json') # add unfilitered data to json file
     filtered_data = filter_data(data)
     add_data_to_file(filtered_data, 'crop_data.json') # add filtered data to json file
 
 def fetch_api_data(url, params):
-    params['key'] = API_KEY
-    response = requests.get(url=url, params=params)
+    response = requests.get(url)
     if response.status_code == 200: # successful request
         return response.json()
     else:
