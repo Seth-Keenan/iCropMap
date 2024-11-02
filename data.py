@@ -10,7 +10,6 @@ def fetch_api_data(url, params):
         return response.json()
     else:
         print("FAILED")
-        print(f'\n\n\n\n{params}\n\n\n\n\n')
         response.raise_for_status()
 
 
@@ -26,6 +25,15 @@ def loop_through_states():
         pull_data(state)
         
 
+def filter_data(data):
+    filtered_data = []
+    with open('state_data.json', 'r') as f:
+        state_data = json.load(f)
+    dict_list = state_data['data']
+    for item in dict_list:
+        if item.get("short_desc") == "CORN - ACRES PLANTED":
+            filtered_data.append(item)
+    return filtered_data
 def pull_data(state):
     params = {
         'commodity_desc': 'CORN',
@@ -35,14 +43,16 @@ def pull_data(state):
     }
     url = "https://quickstats.nass.usda.gov/api/api_GET/"
     data = fetch_api_data(url, params)
-    data_list.append(data)
+    add_data_to_file(data, 'state_data.json')
+    filtered_data = filter_data(data)
+    data_list.append(filtered_data)
 
-def add_data_to_file(data):
-    filename = 'crop_data.json'
-    with open(filename, 'w') as json_file:
+
+def add_data_to_file(data, filepath):
+    with open(filepath, 'w') as json_file:
         json.dump(data, json_file, indent=4)
 
 if __name__ == "__main__":
     data_list = []
-    loop_through_states()
-    add_data_to_file(data_list)
+    pull_data('IA')
+    add_data_to_file(data_list, 'crop_data.json')
