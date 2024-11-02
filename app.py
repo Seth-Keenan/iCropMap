@@ -5,14 +5,10 @@ from fastapi import FastAPI
 # Create Python virtual environment
 # python3 -m venv venv
 # source venv/bin/activate
-# .\venv\Scripts\activate
 
 # Install dependencies 
 # pip3 install -r requirements.txt
-<<<<<<< HEAD
-=======
 # May have to restart venv after installing fastapi
->>>>>>> SekDev
 
 # run app with "fastapi dev app.py"
 
