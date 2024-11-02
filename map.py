@@ -34,4 +34,6 @@ class Map:
             legend_name="Crop",
         ).add_to(self.m)
 
+        self.m.save("map.html")
+
     

@@ -8,7 +8,7 @@ class MapWindow(QtWidgets.QMainWindow):
 
         # Set up the window
         self.setWindowTitle("iCROP Map")
-        self.setGeometry(100, 100, 1000, 800)
+        self.setGeometry(100, 100, 1600, 800)
 
         # Create the Folium map
         map_instance = Map()  # This will save the map as 'map.html'
