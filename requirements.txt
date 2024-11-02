@@ -7,3 +7,4 @@ geopy
 PyQt5
 PyQtWebEngine
 requests
+fastapi[standard]

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Data Map</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map-container {
+            width: 1000px;
+            height: 1000px; /* Set the height of the container */
+            margin-top: 20px;
+        }
+
+        #crop-select {
+            margin-top: 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #crop-select:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script src="/static/scripts.js"></script> <!-- Ensure the correct path to scripts.js -->
+</head>
+<body>
+    <div>
+        <label for="crop-select">Choose a crop:</label>
+        <select id="crop-select">
+            <option value="CORN">Corn</option>
+            <option value="WHEAT">Wheat</option>
+            <option value="SOYBEANS">Soybeans</option>
+        </select>
+    </div>
+    <div id="map-container">
+        <iframe src="/static/map.html" width="100%" height="100%" frameborder="0"></iframe> <!-- Ensure the correct path to map.html -->
+    </div>
+</body>
+</html>
