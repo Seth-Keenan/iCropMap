@@ -9,12 +9,16 @@
 </head>
 <body>
     <div>
-        <label for="crop-select">Choose a crop:</label>
-        <select id="crop-select">
-            <option value="CORN">Corn</option>
-            <option value="WHEAT">Wheat</option>
-            <option value="SOYBEANS">Soybeans</option>
-        </select>
+        <form id="crop-form">
+            <label for="crop-select">Choose a crop:</label>
+            <select id="crop-select">
+                <option value="">--Select a crop--</option>
+                <option value="CORN">Corn</option>
+                <option value="WHEAT">Wheat</option>
+                <option value="SOYBEANS">Soybeans</option>
+            </select>
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
     </div>
     <div id="map-container">
         <iframe id="map-frame" src="/static/map.html" width="100%" height="100%" frameborder="0"></iframe>
