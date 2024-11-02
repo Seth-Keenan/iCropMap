@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 venv/
 venv
 __pycache__
+=======
+# .gitignore
+config.py
+>>>>>>> main
