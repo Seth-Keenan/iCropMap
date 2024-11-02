@@ -9,6 +9,7 @@ from fastapi import FastAPI
 
 # Install dependencies 
 # pip3 install -r requirements.txt
+# May have to restart venv after installing fastapi
 
 # run app with "fastapi dev app.py"
 
