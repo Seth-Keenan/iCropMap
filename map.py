@@ -25,23 +25,38 @@ class Map:
         "https://raw.githubusercontent.com/python-visualization/folium-example-data/main/us_states.json"
         ).json()
 
+        folium.Choropleth(
+            geo_data=self.state_geo
+        )
+
         self.m.save("static/map.html")
 
     def heat_map(self, crop):
-        state_data = pandas.read_csv("crop_data.csv")
+        if(crop == ''):
+            folium.Choropleth(
+                geo_data=self.state_geo,
+                name="choropleth",
+                fill_color="lightgray",
+                fill_opacity=0.7,
+                line_opacity=0.5,
+            ).add_to(self.m)
+
+            self.m.save("static/map.html")
+        else:
+            state_data = pandas.read_csv("crop_data.csv")
+            
+            folium.Choropleth(
+                geo_data=self.state_geo,
+                name="choropleth",
+                data=state_data,
+                columns=["State", "Amount"],
+                key_on="feature.id",
+                fill_color="YlGn",
+                fill_opacity=0.7,
+                line_opacity=0.5,
+                legend_name=crop,
+            ).add_to(self.m)
+
+            self.m.save("static/map.html")
+
         
-        folium.Choropleth(
-            geo_data=self.state_geo,
-            name="choropleth",
-            data=state_data,
-            columns=["State", "Amount"],
-            key_on="feature.id",
-            fill_color="YlGn",
-            fill_opacity=0.7,
-            line_opacity=0.5,
-            legend_name=crop,
-        ).add_to(self.m)
-
-        self.m.save("static/map.html")
-
-    
