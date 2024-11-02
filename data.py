@@ -40,8 +40,4 @@ def pull_data(state):
 def add_data_to_file(data):
     pass
 
-def main():
-    loop_through_states()
-
-main()
-
+loop_through_states()
