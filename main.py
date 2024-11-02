@@ -1,2 +1,1 @@
-print("Hello World!");
-print("push test")
+print("Hello World!")
