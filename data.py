@@ -7,12 +7,13 @@ from config import API_KEY
 class Crop:
     def __init__(self, crop, date):
         self.crop = crop
-        self.data = self.pull_data(crop)
+        self.date = date
+        self.data = self.pull_data(crop, date)
 
-    def pull_data(self, crop):
+    def pull_data(self, crop, date):
         params = {
             'commodity_desc': crop,
-            'year__GE': "2024",
+            'year__GE': date,
             'key': API_KEY,
             'format': 'json',
             "short_desc": f"{crop} - ACRES PLANTED",

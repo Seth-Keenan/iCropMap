@@ -5,7 +5,6 @@ from data import Crop
 from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse, FileResponse, RedirectResponse
-import uvicorn
 
 
 app = FastAPI()
@@ -21,6 +20,7 @@ async def read_index():
 @app.get("/map", response_class=HTMLResponse)
 async def read_map(crop: str, year: str):
     map = Map()
+    print("\n\n" + year + "\n\n")
     Crop(crop, year)
     map.heat_map(crop)
     with open(os.path.join("static", "index.html"), "r") as file:
