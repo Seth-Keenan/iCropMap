@@ -35,13 +35,14 @@ def pull_data(state):
     }
     url = "https://quickstats.nass.usda.gov/api/api_GET/"
     data = fetch_api_data(url, params)
-    add_data_to_file(data)
+    data_list.append(data)
 
 def add_data_to_file(data):
-    pass
+    filename = 'crop_data.json'
+    with open(filename, 'w') as json_file:
+        json.dump(data, json_file, indent=4)
 
-def main():
+if __name__ == "__main__":
+    data_list = []
     loop_through_states()
-
-main()
-
+    add_data_to_file(data_list)
