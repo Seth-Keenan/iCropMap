@@ -8,7 +8,4 @@ class Map:
         self.m = folium.Map(location=(39.30, -98.5795), zoom_start=5)
         self.mini_map = MiniMap()
         self.m.add_child(self.mini_map)
-        self.m.save('map.html')
-
-
-    
+        self.m.save('map.html')  
