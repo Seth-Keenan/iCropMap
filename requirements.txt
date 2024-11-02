@@ -1,7 +1,7 @@
 folium
 pandas
-webbrowser
 numpy
 ipywidgets
 geocoder
 geopy
+requests
