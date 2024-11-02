@@ -4,7 +4,4 @@ numpy
 ipywidgets
 geocoder
 geopy
-<<<<<<< HEAD
 requests
-=======
->>>>>>> main
