@@ -1,198 +1,94 @@
 [
     {
-        "State": "OT",
-        "Amount": 767000
-    },
-    {
-        "State": "AL",
-        "Amount": 280000
+        "State": "AK",
+        "Amount": 8000
     },
     {
         "State": "AZ",
-        "Amount": 70000
-    },
-    {
-        "State": "AR",
-        "Amount": 500000
+        "Amount": 13000
     },
     {
         "State": "CA",
-        "Amount": 440000
+        "Amount": 40000
     },
     {
         "State": "CO",
-        "Amount": 1460000
-    },
-    {
-        "State": "CT",
-        "Amount": 24000
+        "Amount": 56000
     },
     {
         "State": "DE",
-        "Amount": 165000
-    },
-    {
-        "State": "FL",
-        "Amount": 85000
-    },
-    {
-        "State": "GA",
-        "Amount": 375000
+        "Amount": 21000
     },
     {
         "State": "ID",
-        "Amount": 380000
-    },
-    {
-        "State": "IL",
-        "Amount": 10800000
-    },
-    {
-        "State": "IN",
-        "Amount": 5200000
-    },
-    {
-        "State": "IA",
-        "Amount": 12900000
+        "Amount": 530000
     },
     {
         "State": "KS",
-        "Amount": 6300000
-    },
-    {
-        "State": "KY",
-        "Amount": 1370000
-    },
-    {
-        "State": "LA",
-        "Amount": 470000
+        "Amount": 10000
     },
     {
         "State": "ME",
-        "Amount": 30000
+        "Amount": 10000
     },
     {
         "State": "MD",
-        "Amount": 440000
-    },
-    {
-        "State": "MA",
-        "Amount": 14000
+        "Amount": 31000
     },
     {
         "State": "MI",
-        "Amount": 2250000
+        "Amount": 8000
     },
     {
         "State": "MN",
-        "Amount": 8200000
-    },
-    {
-        "State": "MS",
-        "Amount": 490000
-    },
-    {
-        "State": "MO",
-        "Amount": 3450000
+        "Amount": 40000
     },
     {
         "State": "MT",
-        "Amount": 135000
-    },
-    {
-        "State": "NE",
-        "Amount": 10100000
-    },
-    {
-        "State": "NV",
-        "Amount": 20000
-    },
-    {
-        "State": "NH",
-        "Amount": 12000
-    },
-    {
-        "State": "NJ",
-        "Amount": 71000
-    },
-    {
-        "State": "NM",
-        "Amount": 105000
+        "Amount": 900000
     },
     {
         "State": "NY",
-        "Amount": 1010000
+        "Amount": 8000
     },
     {
         "State": "NC",
-        "Amount": 890000
+        "Amount": 16000
     },
     {
         "State": "ND",
-        "Amount": 3950000
-    },
-    {
-        "State": "OH",
-        "Amount": 3400000
-    },
-    {
-        "State": "OK",
-        "Amount": 450000
+        "Amount": 370000
     },
     {
         "State": "OR",
-        "Amount": 95000
+        "Amount": 31000
     },
     {
         "State": "PA",
-        "Amount": 990000
-    },
-    {
-        "State": "RI",
-        "Amount": 2000
-    },
-    {
-        "State": "SC",
-        "Amount": 345000
+        "Amount": 40000
     },
     {
         "State": "SD",
-        "Amount": 5900000
-    },
-    {
-        "State": "TN",
-        "Amount": 700000
-    },
-    {
-        "State": "TX",
-        "Amount": 2200000
+        "Amount": 34000
     },
     {
         "State": "UT",
-        "Amount": 75000
-    },
-    {
-        "State": "VT",
-        "Amount": 94000
+        "Amount": 14000
     },
     {
         "State": "VA",
-        "Amount": 460000
+        "Amount": 24000
     },
     {
         "State": "WA",
-        "Amount": 170000
-    },
-    {
-        "State": "WV",
-        "Amount": 41000
+        "Amount": 80000
     },
     {
         "State": "WI",
-        "Amount": 3750000
+        "Amount": 15000
     },
     {
         "State": "WY",
-        "Amount": 90000
+        "Amount": 74000
     }
 ]
