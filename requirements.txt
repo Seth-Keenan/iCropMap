@@ -4,4 +4,6 @@ numpy
 ipywidgets
 geocoder
 geopy
+PyQt5
+PyQtWebEngine
 requests

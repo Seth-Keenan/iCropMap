@@ -1,9 +1,13 @@
-import folium
-from folium import plugins
+import sys
+from PyQt5 import QtWidgets
 from map import Map
+from mapWindow import MapWindow
 
 def main():
-    OurMap = Map()
-    OurMap.m.show_in_browser()
-main()
+    app = QtWidgets.QApplication(sys.argv)
+    window = MapWindow()
+    window.show()
+    sys.exit(app.exec_())
 
+if __name__ == "__main__":
+    main()
