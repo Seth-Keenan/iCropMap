@@ -54,10 +54,49 @@ class Map:
                 fill_color="YlGn",
                 fill_opacity=0.7,
                 line_opacity=0.5,
-                legend_name=crop,
-                nan_fill_color="lightyellow"
+                legend_name=f"Acres of {crop.lower()} planted",
             ).add_to(self.m)
 
             self.m.save("static/map.html")
 
+        style = lambda x: {
+            'fill_opacity': 0.00000000000000001,
+            'line_opacity': 0.0,
+            "color": "lightgrey"
+        }
+
+        highlight_state = lambda x: {
+            'color': 'grey',
+            'opacity': 0.3,
+            'weight': 3
+        }
+
+        df = pandas.read_csv('crop_data.csv')
+        amtDict = dict(zip(df['State'], df['Amount']))
+        for feature in self.state_geo['features']:
+            state_id = feature['id']
+            state_name = feature['properties']['name']
+            print(f"Processing state: {state_name}")
+            state_geojson = {
+                "type": "FeatureCollection",
+                "features": [feature]
+            }
+
+            # Add the GeoJson object to the map with a popup
+            folium.features.GeoJson(
+                state_geojson,
+                # fill_opacity=0.00000000000000001,
+                # line_opacity=0.0,
+                # color="lightgrey",
+                name=state_name,
+                style_function=style,
+                highlight_function=highlight_state,
+                popup=folium.Popup(state_name + "(" + state_id + "):\n" + str(amtDict.get(state_id)) + f" acres of {crop.lower()}")
+            ).add_to(self.m)
+
+            # Save the updated map
+        self.m.save("static/map.html")
+
+        
+        
         
