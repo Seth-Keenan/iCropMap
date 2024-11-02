@@ -1,13 +1,9 @@
 import folium
 from folium import plugins
-import ipywidgets
-import geocoder
-import geopy
-import numpy as np
-import pandas as pd
+from map import Map
 
 def main():
-    map = folium.Map()
-    map.save("map.html")
-
+    OurMap = Map()
+    OurMap.m.show_in_browser()
 main()
+
