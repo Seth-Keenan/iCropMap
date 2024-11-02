@@ -1,6 +1,8 @@
-# .gitignore
 config.py
 venv
 .vscode
 __pycache__
+__pycache__/
+crop_data.csv
+crop_data.json
 map.html
