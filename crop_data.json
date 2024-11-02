@@ -1,257 +1,198 @@
 [
     {
-        "crop": "CORN",
-        "state": "US TOTAL",
-        "amount": "90,748,000"
+        "State": "OT",
+        "Amount": "767,000"
     },
     {
-        "crop": "CORN",
-        "state": "",
-        "amount": "1,207,000"
+        "State": "AL",
+        "Amount": "280,000"
     },
     {
-        "crop": "CORN",
-        "state": "OTHER STATES",
-        "amount": "767,000"
+        "State": "AZ",
+        "Amount": "70,000"
     },
     {
-        "crop": "CORN",
-        "state": "ALABAMA",
-        "amount": "280,000"
+        "State": "AR",
+        "Amount": "500,000"
     },
     {
-        "crop": "CORN",
-        "state": "ARIZONA",
-        "amount": "70,000"
+        "State": "CA",
+        "Amount": "440,000"
     },
     {
-        "crop": "CORN",
-        "state": "ARKANSAS",
-        "amount": "500,000"
+        "State": "CO",
+        "Amount": "1,460,000"
     },
     {
-        "crop": "CORN",
-        "state": "CALIFORNIA",
-        "amount": "440,000"
+        "State": "CT",
+        "Amount": "24,000"
     },
     {
-        "crop": "CORN",
-        "state": "COLORADO",
-        "amount": "1,460,000"
+        "State": "DE",
+        "Amount": "165,000"
     },
     {
-        "crop": "CORN",
-        "state": "CONNECTICUT",
-        "amount": "24,000"
+        "State": "FL",
+        "Amount": "85,000"
     },
     {
-        "crop": "CORN",
-        "state": "DELAWARE",
-        "amount": "165,000"
+        "State": "GA",
+        "Amount": "375,000"
     },
     {
-        "crop": "CORN",
-        "state": "FLORIDA",
-        "amount": "85,000"
+        "State": "ID",
+        "Amount": "380,000"
     },
     {
-        "crop": "CORN",
-        "state": "GEORGIA",
-        "amount": "375,000"
+        "State": "IL",
+        "Amount": "10,800,000"
     },
     {
-        "crop": "CORN",
-        "state": "IDAHO",
-        "amount": "380,000"
+        "State": "IN",
+        "Amount": "5,200,000"
     },
     {
-        "crop": "CORN",
-        "state": "ILLINOIS",
-        "amount": "10,800,000"
+        "State": "IA",
+        "Amount": "12,900,000"
     },
     {
-        "crop": "CORN",
-        "state": "INDIANA",
-        "amount": "5,200,000"
+        "State": "KS",
+        "Amount": "6,300,000"
     },
     {
-        "crop": "CORN",
-        "state": "IOWA",
-        "amount": "12,900,000"
+        "State": "KY",
+        "Amount": "1,370,000"
     },
     {
-        "crop": "CORN",
-        "state": "KANSAS",
-        "amount": "6,300,000"
+        "State": "LA",
+        "Amount": "470,000"
     },
     {
-        "crop": "CORN",
-        "state": "KENTUCKY",
-        "amount": "1,370,000"
+        "State": "ME",
+        "Amount": "30,000"
     },
     {
-        "crop": "CORN",
-        "state": "LOUISIANA",
-        "amount": "470,000"
+        "State": "MD",
+        "Amount": "440,000"
     },
     {
-        "crop": "CORN",
-        "state": "MAINE",
-        "amount": "30,000"
+        "State": "MA",
+        "Amount": "14,000"
     },
     {
-        "crop": "CORN",
-        "state": "MARYLAND",
-        "amount": "440,000"
+        "State": "MI",
+        "Amount": "2,250,000"
     },
     {
-        "crop": "CORN",
-        "state": "MASSACHUSETTS",
-        "amount": "14,000"
+        "State": "MN",
+        "Amount": "8,200,000"
     },
     {
-        "crop": "CORN",
-        "state": "MICHIGAN",
-        "amount": "2,250,000"
+        "State": "MS",
+        "Amount": "490,000"
     },
     {
-        "crop": "CORN",
-        "state": "MINNESOTA",
-        "amount": "8,200,000"
+        "State": "MO",
+        "Amount": "3,450,000"
     },
     {
-        "crop": "CORN",
-        "state": "MISSISSIPPI",
-        "amount": "490,000"
+        "State": "MT",
+        "Amount": "135,000"
     },
     {
-        "crop": "CORN",
-        "state": "MISSOURI",
-        "amount": "3,450,000"
+        "State": "NE",
+        "Amount": "10,100,000"
     },
     {
-        "crop": "CORN",
-        "state": "MONTANA",
-        "amount": "135,000"
+        "State": "NV",
+        "Amount": "20,000"
     },
     {
-        "crop": "CORN",
-        "state": "NEBRASKA",
-        "amount": "10,100,000"
+        "State": "NH",
+        "Amount": "12,000"
     },
     {
-        "crop": "CORN",
-        "state": "NEVADA",
-        "amount": "20,000"
+        "State": "NJ",
+        "Amount": "71,000"
     },
     {
-        "crop": "CORN",
-        "state": "NEW HAMPSHIRE",
-        "amount": "12,000"
+        "State": "NM",
+        "Amount": "105,000"
     },
     {
-        "crop": "CORN",
-        "state": "NEW JERSEY",
-        "amount": "71,000"
+        "State": "NY",
+        "Amount": "1,010,000"
     },
     {
-        "crop": "CORN",
-        "state": "NEW MEXICO",
-        "amount": "105,000"
+        "State": "NC",
+        "Amount": "890,000"
     },
     {
-        "crop": "CORN",
-        "state": "NEW YORK",
-        "amount": "1,010,000"
+        "State": "ND",
+        "Amount": "3,950,000"
     },
     {
-        "crop": "CORN",
-        "state": "NORTH CAROLINA",
-        "amount": "890,000"
+        "State": "OH",
+        "Amount": "3,400,000"
     },
     {
-        "crop": "CORN",
-        "state": "NORTH DAKOTA",
-        "amount": "3,950,000"
+        "State": "OK",
+        "Amount": "450,000"
     },
     {
-        "crop": "CORN",
-        "state": "OHIO",
-        "amount": "3,400,000"
+        "State": "OR",
+        "Amount": "95,000"
     },
     {
-        "crop": "CORN",
-        "state": "OKLAHOMA",
-        "amount": "450,000"
+        "State": "PA",
+        "Amount": "990,000"
     },
     {
-        "crop": "CORN",
-        "state": "OREGON",
-        "amount": "95,000"
+        "State": "RI",
+        "Amount": "2,000"
     },
     {
-        "crop": "CORN",
-        "state": "PENNSYLVANIA",
-        "amount": "990,000"
+        "State": "SC",
+        "Amount": "345,000"
     },
     {
-        "crop": "CORN",
-        "state": "RHODE ISLAND",
-        "amount": "2,000"
+        "State": "SD",
+        "Amount": "5,900,000"
     },
     {
-        "crop": "CORN",
-        "state": "SOUTH CAROLINA",
-        "amount": "345,000"
+        "State": "TN",
+        "Amount": "700,000"
     },
     {
-        "crop": "CORN",
-        "state": "SOUTH DAKOTA",
-        "amount": "5,900,000"
+        "State": "TX",
+        "Amount": "2,200,000"
     },
     {
-        "crop": "CORN",
-        "state": "TENNESSEE",
-        "amount": "700,000"
+        "State": "UT",
+        "Amount": "75,000"
     },
     {
-        "crop": "CORN",
-        "state": "TEXAS",
-        "amount": "2,200,000"
+        "State": "VT",
+        "Amount": "94,000"
     },
     {
-        "crop": "CORN",
-        "state": "UTAH",
-        "amount": "75,000"
+        "State": "VA",
+        "Amount": "460,000"
     },
     {
-        "crop": "CORN",
-        "state": "VERMONT",
-        "amount": "94,000"
+        "State": "WA",
+        "Amount": "170,000"
     },
     {
-        "crop": "CORN",
-        "state": "VIRGINIA",
-        "amount": "460,000"
+        "State": "WV",
+        "Amount": "41,000"
     },
     {
-        "crop": "CORN",
-        "state": "WASHINGTON",
-        "amount": "170,000"
+        "State": "WI",
+        "Amount": "3,750,000"
     },
     {
-        "crop": "CORN",
-        "state": "WEST VIRGINIA",
-        "amount": "41,000"
-    },
-    {
-        "crop": "CORN",
-        "state": "WISCONSIN",
-        "amount": "3,750,000"
-    },
-    {
-        "crop": "CORN",
-        "state": "WYOMING",
-        "amount": "90,000"
+        "State": "WY",
+        "Amount": "90,000"
     }
 ]

@@ -1,6 +1,7 @@
 import requests
 import urllib.parse
 import json
+import pandas as pd
 from config import API_KEY
 
 def main(crop): # pass crop to get state, crop, and amount
@@ -21,8 +22,9 @@ def pull_data(crop):
     data = fetch_api_data(full_url) # pull data from API
     
     add_data_to_file(data, 'state_data.json') # add unfilitered data to json file
-    filtered_data = filter_data(data, crop)
+    filtered_data = filter_data(crop)
     add_data_to_file(filtered_data, 'crop_data.json') # add filtered data to json file
+    convert_json_to_csv() # convert json file to csv file
 
 def fetch_api_data(url):
     response = requests.get(url)
@@ -31,23 +33,29 @@ def fetch_api_data(url):
     else:
         response.raise_for_status() # raise exception if request fails
         
-def filter_data(data, crop):
+def filter_data(crop):
     filtered_data = []
     with open('state_data.json', 'r') as f: # open file of unfiltered json file 
         state_data = json.load(f)
     dict_list = state_data['data'] # list of dictionaries
     for item in dict_list: # loop through dictionaries
         if item.get("short_desc") == f"{crop} - ACRES PLANTED" and item.get("reference_period_desc") == "YEAR": # anything other then acres planted and ignores month data
-            new_item = {"crop": item.get("commodity_desc")}
-            new_item["state"] = item.get("state_name")
-            new_item["amount"] = item.get("Value")
+            new_item = {"State": item.get("state_alpha")}
+            new_item["Amount"] = item.get("Value")
             # adds crop, state, and amount of acres of the crop planted per state to dictionary
-            filtered_data.append(new_item)
+            if len(item.get("state_alpha")) == 2 and item.get("state_alpha") != "US": # filter random entries and overall US data 
+                filtered_data.append(new_item)
     return filtered_data
 
 def add_data_to_file(data, filepath): # add filtered data to file
     with open(filepath, 'w') as json_file:
         json.dump(data, json_file, indent=4)
-    
+
+def convert_json_to_csv():
+    with open('crop_data.json', 'r') as f:
+        data = json.load(f)
+    df = pd.DataFrame(data)
+    df.to_csv('crop_data.csv', index=False)
+
 if __name__ == "__main__":
     main('CORN') # passing CORN for testing reasons, needs to be a input per filter later
