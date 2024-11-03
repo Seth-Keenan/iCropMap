@@ -17,7 +17,8 @@ class Map:
             min_lon=-125.0,
             max_lon=-66.93457,
             max_bounds = True,
-            scrollWheelZoom=False
+            scrollWheelZoom=False,
+            doubleClickZoom=False
         )
         
         self.state_geo = requests.get(
