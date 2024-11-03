@@ -94,3 +94,21 @@ body {
     border-color: #333;
     border-radius: 8px;
 }
+
+.top-right {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+}
+
+#contact-link {
+    margin-left: auto; 
+    text-decoration: none; 
+    color: #000000; 
+    font-weight: bold; 
+}
+
+#contact-link:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #000000; /* Darker blue on hover */
+}
