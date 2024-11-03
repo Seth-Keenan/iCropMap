@@ -25,3 +25,8 @@ async def read_map(crop: str, year: str):
     map.heat_map(crop)
     with open(os.path.join("static", "index.html"), "r") as file:
         return HTMLResponse(content=file.read())
+
+@app.get("/contact", response_class=HTMLResponse)
+async def read_contact():
+    with open(os.path.join("static", "contact.html"), "r") as file:
+        return HTMLResponse(content=file.read())
