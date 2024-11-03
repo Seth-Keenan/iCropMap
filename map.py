@@ -81,6 +81,11 @@ class Map:
                 "type": "FeatureCollection",
                 "features": [feature]
             }
+        
+            try:
+                amount = "{:,}".format(amtDict.get(state_id))
+            except:
+                amount = str(amtDict.get(state_id))
 
             # Add the GeoJson object to the map with a popup
             folium.features.GeoJson(
@@ -91,7 +96,7 @@ class Map:
                 name=state_name,
                 style_function=style,
                 highlight_function=highlight_state,
-                popup=folium.Popup(state_name + "(" + state_id + "):\n" + str(amtDict.get(state_id)) + f" acres of {crop.lower()}")
+                popup=folium.Popup(state_name + "(" + state_id + "):\n" + amount + f" acres of {crop.lower()}")
             ).add_to(self.m)
 
             # Save the updated map
