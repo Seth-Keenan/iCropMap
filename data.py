@@ -16,6 +16,7 @@ class Crop:
             'year': date,
             'key': API_KEY,
             'format': 'json',
+            'freq_desc': "Annual",
             "short_desc": f"{crop} - ACRES PLANTED",
             "reference_period_desc": "YEAR"
         }
@@ -25,7 +26,7 @@ class Crop:
         data = self.fetch_api_data(full_url) # pull data from API
         
         self.add_data_to_file(data, 'state_data.json') # add unfilitered data to json file
-        filtered_data = self.filter_data(crop)
+        filtered_data = self.filter_data()
         self.add_data_to_file(filtered_data, 'crop_data.json') # add filtered data to json file
         self.convert_json_to_csv() # convert json file to csv file
 
@@ -36,13 +37,13 @@ class Crop:
         else:
             response.raise_for_status() # raise exception if request fails
             
-    def filter_data(self, crop):
+    def filter_data(self):
         filtered_data = []
         with open('state_data.json', 'r') as f: # open file of unfiltered json file 
             state_data = json.load(f)
         dict_list = state_data['data'] # list of dictionaries
         for item in dict_list: # loop through dictionaries
-            if item.get("short_desc") == f"{crop} - ACRES PLANTED" and item.get("reference_period_desc") == "YEAR": # anything other then acres planted and ignores month data
+            if item.get("county_code") == "":
                 new_item = {"State": item.get("state_alpha")}
                 new_item["Amount"] = int(item.get("Value").replace(',', ''))
                 # adds crop, state, and amount of acres of the crop planted per state to dictionary
