@@ -11,9 +11,14 @@ app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
+@app.on_event("startup")
+async def startup_event():
+    map = Map()
+    map.m.save("static/map.html")
+
 @app.get("/", response_class=HTMLResponse)
 async def read_index():
-    map = Map() 
+
     with open(os.path.join("static", "index.html"), "r") as file:
         return HTMLResponse(content=file.read())
 
