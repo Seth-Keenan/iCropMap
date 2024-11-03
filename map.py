@@ -7,7 +7,6 @@ import pandas
 
 class Map:
     def __init__(self):
-        #self.crop = crop
         self.m = folium.Map(
             location=(39.30, -98.5795),
             zoom_start=5,
