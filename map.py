@@ -55,6 +55,7 @@ class Map:
                 fill_opacity=0.7,
                 line_opacity=0.5,
                 legend_name=f"Acres of {crop.lower()} planted",
+                nan_fill_color="lightyellow"
             ).add_to(self.m)
 
             self.m.save("static/map.html")
@@ -85,7 +86,7 @@ class Map:
             try:
                 amount = "{:,}".format(amtDict.get(state_id))
             except:
-                amount = str(amtDict.get(state_id))
+                amount = "Zero"
 
             # Add the GeoJson object to the map with a popup
             folium.features.GeoJson(
