@@ -96,7 +96,7 @@ class Map:
                 name=state_name,
                 style_function=style,
                 highlight_function=highlight_state,
-                popup=folium.Popup(state_name + "(" + state_id + "):\n" + amount + f" acres of {crop.lower()}")
+                popup=folium.Popup(state_name + " (" + state_id + "):\n" + amount + f" acres of {crop.lower()}")
             ).add_to(self.m)
 
             # Save the updated map
